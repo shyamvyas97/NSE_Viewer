@@ -1,0 +1,25 @@
+{
+  "name": "stockexchange",
+  "description": "",
+  "main": "app.js",
+  "authors": [
+    "niravmaunilshyam"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "angular": "^1.7.2",
+    "jquery": "^3.3.1",
+    "angular-ui-router": "^1.0.18"
+  }
+}
