@@ -1,21 +1,16 @@
-var myapp = angular.module('stock', ['ui.router']);
+var myapp = angular.module('stock', ['ui.router','datatables','datatables.bootstrap']);
 
-myapp.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
-
+myapp.config(['$stateProvider', '$urlRouterProvider','$qProvider', function ($stateProvider, $urlRouterProvider,$qProvider) {
+    $qProvider.errorOnUnhandledRejections(false);
     $stateProvider
-        .state('asdf', {
-            url: "/asdf",
-            templateUrl: 'views/index.html',
-            controller: 'home'
-        })
         .state('home', {
             url: "/",
-            templateUrl: 'views/demo.html',
-            controller: 'demo'
+            templateUrl: 'views/home.html',
+            controller: 'home'
         })
         .state('stock', {
             url: "/stock/:snm",
-            templateUrl: 'views/index.html',
+            templateUrl: 'views/stock.html',
             controller: 'stock'
         })
     $urlRouterProvider.otherwise('/');
