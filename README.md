@@ -6,6 +6,6 @@
 ### bower install
 
 ## run project 
-### npm start 
+### npm start OR npm run dev
 
 # Live demo https://nse-viewer.herokuapp.com/
